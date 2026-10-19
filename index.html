@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biography & Links</title>
+    <style>
+        /* Modern Reset and Font Settings */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #e0eacc 0%, #cfdef3 100%);
+            color: #333333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Profile Container Card */
+        .profile-card {
+            background-color: #ffffff;
+            max-width: 450px;
+            width: 100%;
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        /* Profile Image Placeholder */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: #666666;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+        }
+
+        /* Social Links List */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .social-link {
+            display: block;
+            background-color: #f7f9fa;
+            color: #111111;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid #e1e8ed;
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Hover & Tap Effects */
+        .social-link:hover {
+            background-color: #111111;
+            color: #ffffff;
+            border-color: #111111;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .social-link:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- Profile Picture (Replace the placeholder URL with your own image) -->
+        <img src="https://placeholder.com" alt="Profile Picture" class="profile-img">
+        
+        <!-- Name & Tagline -->
+        <h1>Stellar Aphelion</h1>
+        <p class="tagline">MSc Fusion Energy graduate</p>
+        
+        <!-- Short Biography -->
+        <p class="bio">
+            Hello, I'm Stellar. I recently completed the MSc Fusion Energy and have plenty of coding experience to back that up. Welcome to my website! 
+        </p>
+        
+        <!-- Social Media Buttons -->
+        <div class="links-container">
+            <!-- target="_blank" forces links to open safely in a new browser tab -->
+            <a href="https://www.linkedin.com/in/stellaraphelion/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+            <a href="https://github.com/Stellaramie" target="_blank" rel="noopener" class="social-link">GitHub</a>
+            <!--<a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">Instagram</a>-->
+            <!--<a href="https://twitter.com" target="_blank" rel="noopener" class="social-link">X / Twitter</a>-->
+            <a href="mailto:hello@aphelion.me" class="social-link">Email Me</a>
+        </div>
+    </div>
+
+</body>
+</html>
